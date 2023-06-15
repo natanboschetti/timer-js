@@ -16,20 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: linear-gradient(
-    to bottom,
-    rgba(5, 2, 62, 1) 0%,
-    rgba(5, 5, 66, 1) 74%,
-    rgba(19, 19, 114, 1) 100%
-  );
-  /* background-color: #330066; */
-  /* 
-  #feec9a
-  #FFA500
-  #330066
-  */
-
   height: 100vh;
 }
 
@@ -39,12 +25,56 @@ main {
 }
 
 .container {
-  background-color: rgba(19, 19, 114, 1);
   padding: 1rem;
   border-radius: 1rem;
 }
 
 span {
-  color: #ffffff93;
   font-size: 7rem;
+}
+
+.its-morning {
+  background-color: #feec9a;
+}
+
+.its-morning .container {
+  background-color: rgba(215, 182, 32, 0.7);
+}
+
+.its-morning span {
+  color: #111111;
+}
+
+.its-afternoon {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 165, 0, 1) 0%,
+    rgba(255, 165, 0, 1) 60%,
+    rgb(183, 124, 16) 100%
+  );
+  color: #181818;
+}
+
+.its-afternoon .container {
+  background-color: rgba(16, 16, 16, 0.5);
+}
+
+.its-afternoon span {
+  color: #090909;
+}
+
+.its-at-night {
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 2, 62, 1) 0%,
+    rgba(5, 5, 66, 1) 74%,
+    rgba(19, 19, 114, 1) 100%
+  );
+}
+
+.its-at-night .container {
+  background-color: rgba(19, 19, 114, 1);
+}
+.its-night span {
+  color: #020117;
 }
