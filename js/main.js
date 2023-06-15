@@ -1,4 +1,10 @@
+window.onload = function () {
+  document.body.style.display = "none";
+  setInterval(updateClock, 1000);
+};
+
 function updateClock() {
+  document.body.style.display = "flex";
   let nowDate = new Date();
 
   let hours = nowDate.getHours();
